@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="Failed suite [Windows: TestNG Execution using HyperExecute]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="1" parallel="methods" name="Test_1(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="version" value="latest"/>
+    <parameter name="resolution" value="1024x768"/>
+    <parameter name="platform" value="Windows 10"/>
+    <classes>
+      <class name="Test1">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="test1_element_addition_1"/>
+          <include name="test1_element_addition_2"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Test1 -->
+    </classes>
+  </test> <!-- Test_1(failed) -->
+</suite> <!-- Failed suite [Windows: TestNG Execution using HyperExecute] -->
